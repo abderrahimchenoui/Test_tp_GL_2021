@@ -1,0 +1,27 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package robot;
+
+/**
+ *
+ * @author aimen
+ */
+abstract class DirectionRobot {
+    
+    protected Robot robot;
+    
+    DirectionRobot(Robot robot){
+        this.robot = robot;
+    }
+    
+    abstract void move();
+    
+    abstract void goUp();
+    abstract void goDown();
+    abstract void goLeft();
+    abstract void goRight();
+    
+}
